@@ -5,13 +5,13 @@
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	daySpeed = 2.0
+	daySpeed = 1.0
 	#The speed at which time passes during the night.
 	#Night is defined as any time between dayStart (see below) and nightStart (see below).
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	nightSpeed = 2.0
+	nightSpeed = 1.0
 	#An alternative way to set day speed. This setting is mutually exclusive with daySpeed.
 	#If both are set, speedMethod (see below) determines which setting is used.
 	#This setting defines the length of the day in real-world minutes.
@@ -151,14 +151,14 @@
 			#sleepingPlayers -> the number of players in the current dimension who were sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who were sleeping (does not include % symbol).
-			message = "§e§oGood Morning!"
+			message = "Good Morning!"
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
 			#Sets to whom this message is sent.
 			#A target of 'SLEEPING' will send the message to all players who just woke up.
 			#Allowed Values: ALL, DIMENSION, SLEEPING
-			target = "SLEEPING"
+			target = "ALL"
 
 		#This message is sent when a player enters their bed.
 		[sleep.messages.enterBed]
@@ -167,7 +167,7 @@
 			#sleepingPlayers -> the number of players in the current dimension who are sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "${player} is now sleeping. [${sl"
+			message = "${player} is now sleeping."
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
